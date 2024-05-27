@@ -6,7 +6,7 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
+  apiKey: `${ process.env.API_KEY}`,
   authDomain: "skydome-bba13.firebaseapp.com",
   projectId: "skydome-bba13",
   storageBucket: "skydome-bba13.appspot.com",
