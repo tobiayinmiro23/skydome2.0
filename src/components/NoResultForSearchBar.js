@@ -18,7 +18,7 @@ const NoResultForSearchBar = () => {
                 <div>
                     <img src="/E-commerce pictures/undraw_Empty_re_opql.png" loading='eager' alt="no result" />
                 </div>
-                <h1 className='text-center productinfo  font-bold text-[1.3rem] mt-[-3.5rem] max-[1365px]:mt-[-2.3rem] max-[515px]:mt-[-1.5rem] max-[350px]:mt-[-0.7rem]'>Ops, We could not find any result</h1>
+                <h1 className='text-center productinfo  font-bold text-[1.3rem] '>Ops, We could not find any result</h1>
             </div>
         }
     </div>
