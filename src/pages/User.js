@@ -12,7 +12,6 @@ const User = () => {
     const auth = getAuth();
     onAuthStateChanged(auth, (user) => {
         if (user) {
-        const uid = user.uid;
         setemail(user.email)
         }
     });
@@ -23,7 +22,7 @@ const User = () => {
             loading ?
             <div className='pt-[14rem]'><Loader/></div>
             :
-            <h1 className='text-center'>welcome {email}</h1>
+           <div> {email !== '' && <h1 className='text-center font-bold mt-[3.5rem] productinfo text-[1.3rem]'>welcome {email}</h1>}</div>
         }
     </div>
   )
