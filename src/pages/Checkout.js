@@ -1,4 +1,4 @@
-import React,{useState,useRef} from 'react'
+import React,{useState,useRef,useEffect } from 'react'
 import { useSelector,useDispatch } from 'react-redux'
 import axios from 'axios'
 import { getLink } from '../features/Checkout/PaymentLink'
@@ -22,6 +22,22 @@ const Checkout = () => {
     const emailRef=useRef()
     const addressRef=useRef()
     const numberRef=useRef()
+
+    useEffect(() => {
+          const pingServer = async () => {
+            try {
+              let response = axios({
+                method: 'get',
+                url: 'https://skydomee.onrender.com/'
+              })
+              let data = await response
+              console.log(data.data)
+            } catch (err) {
+              console.log(err)
+            }
+          }
+          pingServer()
+    }, [])
     // function to validate the users name
     const handleName=()=>{
          if(name.trim().length === 0){
