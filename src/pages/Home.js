@@ -1,4 +1,5 @@
 import React,{useEffect,useState} from 'react'
+import axios from 'axios';
 import { Header,SliderComponent,Input,Card,Advertisement ,Footer, NoResultForSearchBar} from '../AllFilles';
 import {laptopProductForHome} from '../database/ProdBeforeAdd'
 import {generalProductsForHome} from '../database/ProdAfterAdd'
