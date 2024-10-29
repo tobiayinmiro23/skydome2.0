@@ -134,7 +134,7 @@ const Checkout = () => {
                              <div className="round round animate-spin h-[1.5rem] w-[1.5rem] m-[auto] border-[3px] rounded-[50%]  border-x-[#38ef7d] border-t-[#38ef7d] border-b-[#f1f1f1]"></div>
                           </button>
                           :
-                            <button className='w-[100%] rounded-[0.2rem] px-[1.2rem] py-[0.4rem] bg-[#38ef7d] font-bold cursor-pointer w-[12rem] h-[4rem] text-[white] outline-none hover:bg-[#17cf5e]'>
+                            <button className='w-[100%] rounded-[0.2rem] px-[1.2rem] py-[0.4rem] bg-[#38ef7d] font-bold cursor-pointer w-[12rem] h-[fit-content] text-[white] outline-none hover:bg-[#17cf5e]'>
                                 <div onClick={(e)=>handleButton(e)}>
                                   <h4>Proceed to payment</h4> 
                                   <div className="flex justify-center text-[1.2rem]">
