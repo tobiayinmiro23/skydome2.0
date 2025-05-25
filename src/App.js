@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
-import Loader from './components/Loader';
+import LoaderComponent from './components/Loader';
 
 const Login = lazy(() => import('./pages/Login'))
 const Loader = lazy(() => import('./components/Loader'))
@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Suspense fallback={<div className='pt-[14rem]'><Loader /></div>}>
+        <Suspense fallback={<div className='pt-[14rem]'><LoaderComponent /></div>}>
           <Routes>
             <Route path='/' index element={<Home />} />
             <Route path='/signup' element={<Login />} />
