@@ -1,7 +1,26 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import React, { Suspense } from 'react';
+import React, { Suspense, lazy } from 'react';
 import Loader from './components/Loader';
-import { Home, Checkout, Cart, Payment, Shoe, Cloth, Laptop, Phone, GenderSelection, LaptopInformation, PhoneInformation, ClothShoeAndGeneralInformation, SearchResultCheckout, Login, Unavailable, User, ForgotPassword } from './AllFilles';
+
+const Login = lazy(() => import('./pages/Login'))
+const Loader = lazy(() => import('./components/Loader'))
+const GenderSelection = lazy(() => import('./components/GenderSelection'))
+const Home = lazy(() => import('./pages/Home'))
+const Checkout = lazy(() => import('./pages/Checkout'))
+const Cart = lazy(() => import('./pages/Cart'))
+const LaptopInformation = lazy(() => import('./pages/LaptopInformation'))
+const PhoneInformation = lazy(() => import('./pages/PhoneInformation'))
+const ClothShoeAndGeneralInformation = lazy(() => import('./pages/ClothShoeAndGeneralInformation'))
+const SearchResultCheckout = lazy(() => import('./pages/SearchResultCheckout'))
+const User = lazy(() => import('./pages/User'))
+const Unavailable = lazy(() => import('./pages/Unavailable'))
+const ForgotPassword = lazy(() => import('./pages/ForgotPassword'))
+const Payment = lazy(() => import('./pages/Payment'))
+const Cloth = lazy(() => import('./pages/Cloth'))
+const Laptop = lazy(() => import('./pages/Laptop'))
+const Phone = lazy(() => import('./pages/Phone'))
+const Shoe = lazy(() => import('./pages/Shoe'))
+// import { Home, Checkout, Cart, Payment, Shoe, Cloth, Laptop, Phone, GenderSelection, LaptopInformation, PhoneInformation, ClothShoeAndGeneralInformation, SearchResultCheckout, Login, Unavailable, User, ForgotPassword } from './AllFilles';
 function App() {
   return (
     <div className="App">
