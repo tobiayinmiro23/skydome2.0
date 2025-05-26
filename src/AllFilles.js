@@ -1,30 +1,28 @@
-import { lazy } from 'react';
-
-export const Header = lazy(() => import('./components/Header'));
-export const SliderComponent = lazy(() => import('./components/SliderComponent'))
-export const Input = lazy(() => import('./components/Input'))
-export const Card = lazy(() => import('./components/Card'))
-export const Advertisement = lazy(() => import('./components/Advertisement'))
-export const Footer = lazy(() => import('./components/Footer'))
-export const Login = lazy(() => import('./pages/Login'))
-export const Loader = lazy(() => import('./components/Loader'))
-export const ProductInfoButton = lazy(() => import('./components/ProductInfoButton'))
-export const GenderSelection = lazy(() => import('./components/GenderSelection'))
-export const NoResult = lazy(() => import('./components/NoResult'))
-export const NoResultForSearchBar = lazy(() => import('./components/NoResultForSearchBar'))
-export const PopUpMessage = lazy(() => import('./components/PopUpMessage'))
-export const Home = lazy(() => import('./pages/Home'))
-export const Checkout = lazy(() => import('./pages/Checkout'))
-export const Cart = lazy(() => import('./pages/Cart'))
-export const LaptopInformation = lazy(() => import('./pages/LaptopInformation'))
-export const PhoneInformation = lazy(() => import('./pages/PhoneInformation'))
-export const ClothShoeAndGeneralInformation = lazy(() => import('./pages/ClothShoeAndGeneralInformation'))
-export const SearchResultCheckout = lazy(() => import('./pages/SearchResultCheckout'))
-export const User = lazy(() => import('./pages/User'))
-export const Unavailable = lazy(() => import('./pages/Unavailable'))
-export const ForgotPassword = lazy(() => import('./pages/ForgotPassword'))
-export const Payment = lazy(() => import('./pages/Payment'))
-export const Cloth = lazy(() => import('./pages/Cloth'))
-export const Laptop = lazy(() => import('./pages/Laptop'))
-export const Phone = lazy(() => import('./pages/Phone'))
-export const Shoe = lazy(() => import('./pages/Shoe'))
+export { default as Header } from './components/Header'
+export { default as SliderComponent } from './components/SliderComponent'
+export { default as Input } from './components/Input'
+export { default as Card } from './components/Card'
+export { default as Advertisement } from './components/Advertisement'
+export { default as Footer } from './components/Footer'
+export { default as Login } from './pages/Login'
+export { default as Loader } from './components/Loader'
+export { default as ProductInfoButton } from './components/ProductInfoButton'
+export { default as GenderSelection } from './components/GenderSelection'
+export { default as NoResult } from './components/NoResult'
+export { default as NoResultForSearchBar } from './components/NoResultForSearchBar'
+export { default as PopUpMessage } from './components/PopUpMessage'
+export { default as Home } from './pages/Home'
+export { default as Checkout } from './pages/Checkout'
+export { default as Cart } from './pages/Cart'
+export { default as LaptopInformation } from './pages/LaptopInformation'
+export { default as PhoneInformation } from './pages/PhoneInformation'
+export { default as ClothShoeAndGeneralInformation } from './pages/ClothShoeAndGeneralInformation'
+export { default as SearchResultCheckout } from './pages/SearchResultCheckout'
+export { default as User } from './pages/User'
+export { default as Unavailable } from './pages/Unavailable'
+export { default as ForgotPassword } from './pages/ForgotPassword'
+export { default as Payment } from './pages/Payment'
+export { default as Cloth } from './pages/Cloth'
+export { default as Laptop } from './pages/Laptop'
+export { default as Phone } from './pages/Phone'
+export { default as Shoe } from './pages/Shoe'
