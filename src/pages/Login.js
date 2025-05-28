@@ -53,9 +53,9 @@ const Login = () => {
 
   }
   const handleButton = (e) => {
+    e.preventDefault()
    if (email.trim() === '' || password.trim() === '') return
     else {
-      e.preventDefault()
       seterrormsg('')
       setloading(true)
       if (signup) {
