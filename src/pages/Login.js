@@ -18,7 +18,6 @@ const Login = () => {
   }, [])
 
   const SignUp = (e) => {
-    if(email.trim() === '' || password.trim() === '') return
     e.preventDefault()
     seterrormsg('')
     setloading(true)
@@ -54,13 +53,16 @@ const Login = () => {
 
   }
   const handleButton = (e) => {
-    e.preventDefault()
-    seterrormsg('')
-    setloading(true)
-    if (signup) {
-      SignUp(e)
-    } else {
-      logIn(e)
+   if (email.trim() === '' || password.trim() === '') return
+    else {
+      e.preventDefault()
+      seterrormsg('')
+      setloading(true)
+      if (signup) {
+        SignUp(e)
+      } else {
+        logIn(e)
+      }
     }
   }
   return (
