@@ -18,6 +18,7 @@ const Login = () => {
   }, [])
 
   const SignUp = (e) => {
+    if(email.trim() === '' || password.trim() === '') return
     e.preventDefault()
     seterrormsg('')
     setloading(true)
