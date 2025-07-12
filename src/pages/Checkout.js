@@ -23,21 +23,7 @@ const Checkout = () => {
     const addressRef=useRef()
     const numberRef=useRef()
 
-    useEffect(() => {
-          const pingServer = async () => {
-            try {
-              let response = axios({
-                method: 'get',
-                url: 'https://skydomee.onrender.com/'
-              })
-              let data = await response
-              console.log(data.data)
-            } catch (err) {
-              console.log(err)
-            }
-          }
-          pingServer()
-    }, [])
+   
     // function to validate the users name
     const handleName=()=>{
          if(name.trim().length === 0){
@@ -88,7 +74,7 @@ const Checkout = () => {
         setvalidPayment(false)
         if(validName && validEmail && validAddress  && validNumber){
           setloading(true)
-          axios.post('https://skydomee.onrender.com/pay', {
+          axios.post('https://skydome-backend-production.up.railway.app/pay', {
             email
           })
           .then(function (response) {
