@@ -64,8 +64,7 @@ const ClothShoeAndGeneralInformation= () => {
                               }
                             </div>
                           </div>
-                          <ProductInfoButton id={productInformation.no}/>
-                          
+                          <ProductInfoButton id={productInformation.no} price={productInformation.productprice} />
                       </div>
               }
                   </div>
