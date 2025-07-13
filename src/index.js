@@ -4,21 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { configureStore } from '@reduxjs/toolkit';
-import { Provider } from 'react-redux'; 
+import { Provider } from 'react-redux';
 import MenuReducer from './features/home/Menu';
 import AddToCartReducer from './features/home/AddToCart'
 import CartReducer from './features/Cart/Cart'
 import PaymentLinkReducer from './features/Checkout/PaymentLink'
-
-
+import GetTotalReducer from './features/Checkout/Total'
 
 
 const store = configureStore({
   reducer: {
-    menu:MenuReducer,
-    addToCart:AddToCartReducer,
-    cart:CartReducer,
-    paymentlink:PaymentLinkReducer
+    menu: MenuReducer,
+    addToCart: AddToCartReducer,
+    cart: CartReducer,
+    paymentlink: PaymentLinkReducer,
+    total: GetTotalReducer
   },
 });
 ReactDOM.render(
