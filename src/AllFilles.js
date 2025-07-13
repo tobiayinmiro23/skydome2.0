@@ -26,3 +26,5 @@ export { default as Cloth } from './pages/Cloth'
 export { default as Laptop } from './pages/Laptop'
 export { default as Phone } from './pages/Phone'
 export { default as Shoe } from './pages/Shoe'
+export { default as IndividualCheckout } from './pages/IndividualCheckout'
+
