@@ -32,7 +32,7 @@ const LaptopInformation = () => {
                                     <div className='w-[60rem] pt-[5rem] m-[auto] pb-[1rem] max-[1111px]:w-[85%]'>
                                         <SliderComponent sliderImg={sliderData} from={'productInformation'} />
                                     </div>
-                                    <ProductInfoButton id={productInformation.no} />
+                                     <ProductInfoButton id={productInformation.no} price={productInformation.productprice} />
                                     <div className="mt-[1.5rem]" >
                                         <div className="flex font-semibold text-[1.3rem] productinfo py-[0.9rem] pl-[1.2rem] bg-[white]">
                                             <h3>product information:</h3>
