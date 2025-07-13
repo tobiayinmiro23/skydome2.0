@@ -5,8 +5,8 @@ import { addItemToCart } from '../features/home/AddToCart'
 import { useDispatch } from 'react-redux'
 
 
-export default function PopUpMessage({data}) {
-    const dispatch=useDispatch()
+export default function PopUpMessage({ data, style }) {
+  const dispatch = useDispatch()
   const [state, setState] = React.useState({
     open: false,
     vertical: 'top',
@@ -15,19 +15,19 @@ export default function PopUpMessage({data}) {
   const { vertical, horizontal, open } = state;
 
   const handleClick = (newState) => () => {
-      dispatch(addItemToCart(data))
-      setState({ ...state, open: true });
-   
+    dispatch(addItemToCart(data))
+    setState({ ...state, open: true });
+
   };
-  
- 
+
+
   const handleClose = () => {
     setState({ ...state, open: false });
   };
 
   const buttons = (
     <React.Fragment>
-      <button onClick={handleClick({ vertical: 'top', horizontal: 'center' })} style={{boxShadow:'0px 2px 3px grey'}}  className="w-[90%] my-[0.6rem] px-[0.8rem] py-[0.1rem] rounded-[0.4rem] bg-[#38ef7d] cursor-pointer outline-none hover:bg-[#17cf5e] max-[384px]:mt-[0.25rem] max-[384px]:py-[0rem] max-[343px]:text-[0.9rem]">add to cart</button>
+      <button onClick={handleClick({ vertical: 'top', horizontal: 'center' })} style={{ boxShadow: '0px 2px 3px grey' }} className={style === undefined ? 'w-[90%] my-[0.6rem] px-[0.8rem] py-[0.1rem] rounded-[0.4rem] bg-[#38ef7d] cursor-pointer outline-none hover:bg-[#17cf5e] max-[384px]:mt-[0.25rem] max-[384px]:py-[0rem] max-[343px]:text-[0.9rem]' : style}>add to cart</button>
     </React.Fragment>
   );
 
