@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home, Checkout, Cart, Payment, Shoe, Cloth, Laptop, Phone, GenderSelection, LaptopInformation, PhoneInformation, ClothShoeAndGeneralInformation, SearchResultCheckout, Login, Unavailable, User, ForgotPassword } from './AllFilles';
+import { Home,IndividualCheckout, Checkout, Cart, Payment, Shoe, Cloth, Laptop, Phone, GenderSelection, LaptopInformation, PhoneInformation, ClothShoeAndGeneralInformation, SearchResultCheckout, Login, Unavailable, User, ForgotPassword } from './AllFilles';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
           <Route path='/signup' element={<Login />} />
           <Route path='/login' element={<Login />} />
           <Route path='/checkout' element={<Checkout />} />
+          <Route path='/checkout/:id' element={<IndividualCheckout />} />
           <Route path='/user' element={<User />} />
           <Route path='/unavailable' element={<Unavailable />} />
           <Route path='/forgotpassword' element={<ForgotPassword />} />
