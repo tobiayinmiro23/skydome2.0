@@ -11,7 +11,6 @@ import { searchBarData } from '../database/homeProd'
 const Home = () => {
   useEffect(()=>{
     window.scrollTo(0,0)
-    pingServer()
   },[])
   const [laptopProduct, setlaptopProduct] = useState(laptopProductForHome)
   const [phoneProduct,setphoneProduct]=useState(phoneProductForHome)
