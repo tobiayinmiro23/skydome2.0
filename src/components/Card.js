@@ -21,9 +21,8 @@ const Card = ({data,route}) => {
                         <Link to={`/${route}/`+ item.no}>
                         <div>
                                 <h3 className='productName pb-[0rem] ml-[0.3rem] text-[1.2rem] font-semibold overflow-hidden h-[1.65rem]  max-[384px]:mt-[-0.4rem]  max-[334px]:text-[1.1rem]'>{item.productname}</h3>
-                                <div className="flex item-center ml-[0.3rem] max-[338px]:leading-[0.9rem]">
-                                    <p className="productinfoFont text-[0.85rem]">&#8358;</p>
-                                    <p className="productinfoFont text-[0.85rem]">{item.productprice.toLocaleString()}</p>
+                                <div className="ml-[0.3rem] max-[338px]:leading-[0.9rem]">
+                                    <p className="productinfoFont text-[0.85rem]">&#8358;{item.productprice.toLocaleString()}</p>
                                 </div>
                                 <p className='productinfoFont ml-[0.3rem] overflow-hidden h-[1.9rem] leading-[0.93rem] max-[338px]:mt-[0.13rem]'>{item.productinfopreview}</p>
                             </div>
