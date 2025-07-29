@@ -46,7 +46,7 @@ const LaptopInformation = () => {
                                             <h3>product price:</h3>
                                             <div className="flex ml-[2rem]">
                                                 <span className="naira">&#8358;</span>
-                                                <h3 className="productprice  generalname max-[377px]:ml-[1rem]">{productInformation.productprice}</h3>
+                                                <h3 className="productprice  generalname max-[377px]:ml-[1rem]">{productInformation.productprice.toLocaleString()}</h3>
                                             </div>
                                         </div>
                                         <div className="flex font-semibold text-[1.3rem] productinfo py-[0.9rem] pl-[1.2rem] bg-[#bdb9b9]">
