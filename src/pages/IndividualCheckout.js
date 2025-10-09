@@ -78,7 +78,7 @@ const IndividualCheckout = () => {
         setvalidPayment(false)
         if (validName && validEmail && validAddress && validNumber) {
             setloading(true)
-            axios.post('https://skydome-backend-production.up.railway.app/pay ', {
+            axios.post('https://skydomee.onrender.com/pay ', {
                 email
             })
                 .then(function (response) {
