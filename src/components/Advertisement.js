@@ -27,7 +27,7 @@ const Advertisement = ({setdisplayAdvert}) => {
                 advertisement.map(item=>{
                     return  <div className='block m-[1rem] max-[334px]:m-[0.6rem] max-[309px]:m-[0.3rem]' key={item.id}>
                     <div className="w-[8.35rem] mr-[0.1rem] cursor-pointer h-[10rem] hover:scale-[0.9] hover:duration-[0.6s]">
-                        <img src={item.img} alt="img" />
+                        <img src={item.img} loading="lazy" alt="img" />
                     </div>
                     <h3 className='font-semibold text-[1rem] productinfo'>&#8358;{item.newPrice}</h3>
                     <del className='text-[0.87rem] productinfo'><p>&#8358;{item.oldPrice}</p> </del>
