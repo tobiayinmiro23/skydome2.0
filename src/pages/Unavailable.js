@@ -6,7 +6,7 @@ const Unavailable = () => {
     <div>
       <div className='w-[50%] m-[auto] mt-[2rem] max-[1150px]:w-[65%] max-[912px]:w-[75%] max-[657px]:w-[100%] max-[537px]:mt-[5rem]'>
                 <div>
-                    <img src="/E-commerce pictures/undraw_server_down_s4lk.png" loading='eager' alt="" />
+                    <img src="/E-commerce pictures/undraw_server_down_s4lk.webp" loading='eager' alt="" />
                 </div>
                 <div className='text-center' >
                 <h1 className='text-center productinfo  font-bold text-[1.3rem] '>This page is currently unavailable</h1>
