@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Skydome2.0
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, full-stack ecommerce website for buying different products built with React.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- sign up
+- login in
+- responsive UI
+- search functionality
+- loader
+- general product section
+- laptop product section
+- phone product section
+- shoe product section
+- cloth product section
+- filter functionality
+- global state management with redux toolkit
+- integration with a backend for payment functionality using paystack
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📋 Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js 14+ 
+- npm or yarn
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Installation
 
-### `npm run build`
+1. **Clone the repository**
+   ```bash
+   git clone hhttps://github.com/tobiayinmiro23/skydome2.0.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Enter the directory**
+   ```bash
+   cd skydome2.0
+   ```
+   
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Start the development server**
+   ```bash
+   npm run start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏗️ Project Structure
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+├── public/           
+│   └── image/          # Stores images accessible as static assets
+├── src/                # Main source code
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Application screens
+│   ├── helper-function/ # Reusable utility/helper functions
+│   ├── database/           # Static or textual data used in the project
+│   ├── features/           # code for global state management using redux toolkit
+│       └── cart/          # State management for handling cart
+│       └── checkout/          # State management for handling checkout
+│       └── home/          # State management for handling add to cart and menu display 
+│   ├── AllFiles.jsx    # Centralized imports and exports for easy access to all components and pages from a single file
+└── README.md           # Project documentation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 Dependencies
 
-## Learn More
+- mui/material: for reusable material ui component
+- emotion/styled: for styling material ui component
+- tailwind css: for styling html elements
+- react-slick: for creating slideable image gallery/carousel
+- slick-carousel: for styling the react-slick slideable image gallery/carousel
+- react-router-dom: for navigating 
+- axios: for handling http requests
+- firebase: baas used for authentication in this project
+- reduxjs/toolkit: for handling global state management
+- ui/icons-material: for icons
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
