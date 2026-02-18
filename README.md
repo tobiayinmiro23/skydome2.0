@@ -44,7 +44,7 @@ A modern, full-stack ecommerce website for buying different products built with 
 
 4. **Start the development server**
    ```bash
-   npm run start
+   npm start
    ```
 
 ## 🏗️ Project Structure
