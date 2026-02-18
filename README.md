@@ -70,14 +70,14 @@ A modern, full-stack ecommerce website for buying different products built with 
 
 ## 📦 Dependencies
 
-- mui/material: *for reusable material ui component*  
-- emotion/styled: *for styling material ui component*  
-- tailwind css: *for styling html elements*  
-- react-slick: *for creating slideable image gallery/carousel*  
-- slick-carousel: *for styling the react-slick slideable image gallery/carousel*  
-- react-router-dom: *for navigating*  
-- axios: *for handling http requests*  
-- firebase: *baas used for authentication in this project*  
-- reduxjs/toolkit: *for handling global state management*  
-- ui/icons-material: *for icons*
+- **mui/material**:  *for reusable material ui component*  
+- **emotion/styled**:  *for styling material ui component*  
+- **tailwind css**:  *for styling html elements*  
+- **react-slick**:  *for creating slideable image gallery/carousel*  
+- **slick-carousel**:  *for styling the react-slick slideable image gallery/carousel*  
+- **react-router-dom**:  *for navigating*  
+- **axios**:  *for handling http requests*  
+- **firebase**:  *baas used for authentication in this project*  
+- **reduxjs/toolkit**:  *for handling global state management*  
+- **ui/icons-material**:  *for icons*
 
