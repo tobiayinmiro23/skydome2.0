@@ -29,7 +29,7 @@ A modern, full-stack ecommerce website for buying different products built with 
 
 1. **Clone the repository**
    ```bash
-   git clone hhttps://github.com/tobiayinmiro23/skydome2.0.git
+   git clone https://github.com/tobiayinmiro23/skydome2.0.git
    ```
 
 2. **Enter the directory**
