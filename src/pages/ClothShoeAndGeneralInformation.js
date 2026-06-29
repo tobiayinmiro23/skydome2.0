@@ -7,6 +7,8 @@ import { generalProductsForHome } from '../database/ProdAfterAdd';
 import { displayProductInformationForClothShoeAndGeneral } from '../helper Functions/productInformation';
 import {loaderTimer} from '../helper Functions/LoadingAnimationTimer'
 import { increaseProductSize,decreaseProductSize } from '../helper Functions/handleProductSize';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 const ClothShoeAndGeneralInformation= () => {
   const [loading, setloading] = useState(true)
